@@ -15,11 +15,12 @@
         body {
             background-color: #b4dee5;
             font-family: Arial, sans-serif;
+            text-align: center;
         }
 
         .container {
             max-width: 600px;
-            margin: 100px auto;
+            margin: 145px auto;
             padding: 20px;
             background-color: #ffffff;
             border-radius: 8px;
@@ -32,10 +33,19 @@
             background-color: #f9f9f9;
             border: 1px solid #ddd;
             border-radius: 4px;
+            text-align: left;
         }
 
         .element-info p {
             margin: 5px 0;
+        }
+
+        input[type="text"]{
+            width: min(100%, 500px);
+            height: 30px;
+            display: block;
+            margin: 0 auto;
+            box-sizing: border-box;
         }
 
     </style>
@@ -46,7 +56,7 @@
 
         <h1> ☢︎ Non-Metal Element Information ☢︎ </h1>
         <p> Enter a non-metal element name to search! </p>
-        <input type="text" id="element1" placeholder="Enter an element name to search...">
+        <input type="text" id="element1" placeholder="Enter an element name to search... (ALL CAPS)">
 
         <br><br>
 
@@ -54,11 +64,11 @@
 
         <div class="result" id="result">
 
-            <h3> Showcase Result: </h3>
+            <h3> Results: </h3>
 
                 <div class="element-info">
                     <!--code, name, order from sun, # of moons-->
-                    <p><b> Element Code: </b><span id="code"></span></p>
+                    <p><b><i> Element Symbol: </b></i><span id="code"></span></p>
                     <p><b> Element Name: </b><span id="name"></span></p>
                     <p><b> Atomic Number: </b><span id="atomic_#"></span></p>
                     <p><b> Atomic Mass: </b><span id="atomic_m"></span></p>
