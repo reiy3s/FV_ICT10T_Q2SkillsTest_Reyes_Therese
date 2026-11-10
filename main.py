@@ -25,7 +25,7 @@ elements = {"HYDROGEN": ("H", "Hydrogen", 1, 1.00),
 def search_element(e):
     # get input value
     element1 = document.getElementById("element1").value #get info from dict
-    result = elements.get(element1, ("Element not found, maybe it's not a non-metal element?", "N/A", "N/A", "N/A")) #fall back if not found
+    result = elements.get(element1, ("Element not found", "N/A", "N/A", "N/A")) #fall back if not found
     #display the result
     document.getElementById("code").innerText = result[0]
     document.getElementById("name").innerText = result[1]
