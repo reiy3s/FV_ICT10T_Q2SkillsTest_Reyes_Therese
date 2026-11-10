@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+
+    <title> SKILLS TEST 🐍 </title>
+</head>
+
+    <style>
+
+        body {
+            background-color: #b4dee5;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .element-info p {
+            margin: 5px 0;
+        }
+
+    </style>
+
+<body>
+
+    <div class="container">
+
+        <h1> ☢︎ Non-Metal Element Information ☢︎ </h1>
+        <p> Enter a non-metal element name to search! </p>
+        <input type="text" id="element1" placeholder="Enter an element name to search...">
+
+        <br><br>
+
+        <button py-click="search_element"> Search Element </button>
+
+        <div class="result" id="result">
+
+            <h3> Showcase Result: </h3>
+
+                <div class="element-info">
+                    <!--code, name, order from sun, # of moons-->
+                    <p><b> Element Code: </b><span id="code"></span></p>
+                    <p><b> Element Name: </b><span id="name"></span></p>
+                    <p><b> Atomic Number: </b><span id="atomic_#"></span></p>
+                    <p><b> Atomic Mass: </b><span id="atomic_m"></span></p>
+                </div>
+
+        </div>
+
+        <!-- Connect to pyscript-->
+        <script type="py" src="main.py"></script>
+
+    </div>
+
+</body>
+</html>
