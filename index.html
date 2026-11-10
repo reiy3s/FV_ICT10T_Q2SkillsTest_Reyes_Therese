@@ -24,6 +24,7 @@
             padding: 20px;
             background-color: #ffffff;
             border-radius: 8px;
+            border: 5px solid rgb(139, 180, 176);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
@@ -56,11 +57,13 @@
 
         <h1> ☢︎ Non-Metal Element Information ☢︎ </h1>
         <p> Enter a non-metal element name to search! </p>
-        <input type="text" id="element1" placeholder="Enter an element name to search... (ALL CAPS)">
+        <input type="text" id="element1" placeholder="Enter an element name IN ALL CAPS to search...">
 
-        <br><br>
+        <br>
 
         <button py-click="search_element"> Search Element </button>
+
+        <br>
 
         <div class="result" id="result">
 
@@ -69,9 +72,9 @@
                 <div class="element-info">
                     <!--code, name, order from sun, # of moons-->
                     <p><b><i> Element Symbol: </b></i><span id="code"></span></p>
-                    <p><b> Element Name: </b><span id="name"></span></p>
-                    <p><b> Atomic Number: </b><span id="atomic_#"></span></p>
-                    <p><b> Atomic Mass: </b><span id="atomic_m"></span></p>
+                    <p><b><i> Element Name: </b></i><span id="name"></span></p>
+                    <p><b><i> Atomic Number: </b></i><span id="atomic_#"></span></p>
+                    <p><b><i> Atomic Mass: </b></i><span id="atomic_m"></span></p>
                 </div>
 
         </div>
